@@ -72,6 +72,7 @@
     // Set up our own data storage
     NSDictionary *plainTextAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:
                                          [NSFont userFixedPitchFontOfSize:10.0], NSFontAttributeName,
+                                         NSColor.controlTextColor, NSForegroundColorAttributeName,
                                          nil];
     LazyDataTextStorage *lazyStorage = [[LazyDataTextStorage alloc] init];
     [lazyStorage setAttributes:plainTextAttributes];
